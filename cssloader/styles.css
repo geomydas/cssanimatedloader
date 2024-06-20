@@ -17,7 +17,8 @@ body {
 }
 
 .loading {
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 200px;
   border: 1px solid white;
   display: flex;
@@ -26,7 +27,8 @@ body {
   animation: rotate 1.5s infinite alternate;
 }
 .loading-square {
-  width: 50px;
+  width: 100%;
+  max-width: 50px;
   height: 50px;
   background-color: white;
   animation: rotate 1.5s infinite alternate-reverse;
@@ -35,7 +37,8 @@ body {
 .loading-circle {
   border-radius: 50%;
   border: 1px solid white;
-  width: 35px;
+  width: 100%;
+  max-width: 35px;
   height: 35px;
   position: absolute;
   animation: orbit 1.5s infinite alternate;
@@ -43,22 +46,22 @@ body {
 
 @keyframes orbit {
   from {
-    margin-left: 150px;
+    margin-left: 166px;
   }
   25% {
     margin-left: 0;
-    margin-top: 150px;
+    margin-top: 166px;
   }
   50% {
-    margin-left: -150px;
+    margin-left: -166px;
     margin-top: 0;
   }
   75% {
     margin-left: 0;
-    margin-top: -150px;
+    margin-top: -166px;
   }
   100% {
-    margin-left: 150px;
+    margin-left: 166px;
   }
 }
 
